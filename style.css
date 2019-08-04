@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px
+}
+
+body {
+    background-color: #eee
+}
+
+[id=八卦] {
+
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.75);
+    animation: x 10s linear infinite;
+
+}
+
+@keyframes x {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#八卦>div:first-child {
+
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    background-color: black;
+
+}
+
+#八卦>div:nth-child(2) {
+
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    background-color: white;
+
+}
+
+#八卦>div:nth-child(3) {
+
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 100px;
+    background-color: black;
+    margin-left: -50px;
+    border-radius: 50%;
+
+}
+
+#八卦>div:nth-child(4) {
+
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 100px;
+    background-color: white;
+    margin-left: -50px;
+    border-radius: 50%;
+    bottom: 0px
+}
+
+#八卦>div:nth-child(5) {
+
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 100px;
+    background-color: white;
+    margin-left: -12.5px;
+    border-radius: 50%;
+    top: 37.5px;
+}
+
+#八卦>div:nth-child(6) {
+
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 100px;
+    background-color: black;
+    margin-left: -12.5px;
+    border-radius: 50%;
+    bottom: 37.5px;
+}
+
+#八卦-wrapper {
+    height: 100vh;
+position: relative;
+ 
+    display: inline-block;
+    text-align: center;
+    
+}
+
+#八卦-文字 {
+    margin-top: 1em;
+    text-align: center;}
